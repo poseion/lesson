@@ -1,4 +1,4 @@
-# func of random placing box
+
 import random
 
 def initialize_boxes():
