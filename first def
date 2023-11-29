@@ -1,0 +1,4 @@
+# code of moving box
+def move_boxes(boxes):
+    for i in range(len(boxes)):
+        boxes[i] = random.randint(1, 7)
