@@ -1,0 +1,19 @@
+while True:
+        print("\nEnter the kilometer mark for each box:")
+        for i in range(1, 4):
+            kilometer_mark = int(input(f"Box {i}: "))
+            if kilometer_mark in boxes:
+                print(f"Box {i} found at {kilometer_mark} km!")
+            else:
+                print(f"No box found at {kilometer_mark} km. Boxes are moving!")
+
+                # Simulate box movement
+                move_boxes(boxes)
+
+                break
+        else:
+            if check_cargo(boxes):
+                print("\nCongratulations! You found all the boxes with the Martian cargo.")
+                break
+            else:
+                print("\nWeight of the found boxes is not 713 kg. Try again.")
