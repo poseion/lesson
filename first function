@@ -1,0 +1,4 @@
+import random
+
+def initialize_boxes():
+    return [random.randint(1, 7) for _ in range(3)]
